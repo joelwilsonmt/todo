@@ -1,10 +1,67 @@
-<html>
+<!-- <html> -->
 <head>
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/Users/Zack/code/To_do_list/todo/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Oxygen|Raleway" rel="stylesheet">
 </head>
 <body>
+  <div class="bg-color"></div>
+
+<!--heading-->
+
+  <header id="title" class="grid">
+    <div class="title-wraper">
+      <h1>So Much To Do</h1>
+    </div>
+  </header>
+<!--Kitty :)  -->
+  <div id="catface" class="catimg">
+    <img src="/Users/Zack/code/Images/Kittywoo2.png" alt="">
+  </div>
+<!-- Section a  -->
+
+  <section id="section-a" class="grid">
+    <div class="content-wrap">
+      <div class="list-title">
+        <ul id="list">
+          <!-- <li id="listitem"><input id="checkbox" type="checkbox" name="check" value=""> Lamp</li>
+          <li id="listitem"><input id="checkbox" type="checkbox" name="check" value="">Lightbulbs</li>
+          <li id="listitem"><input id="checkbox" type="checkbox" name="check" value="">Workout leggings</li> -->
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section b -->
+
+  <section id="section-b" class="grid">
+    <div class="content-wrap-a">
+      <form action="get" class="form-main">
+        <h3 class="form-title">Write your Tasks here</h3>
+        <input type="text" placeholder="Add to your list..." id="textin" name="ToDo" class="to-do-enter">
+          <!-- Add to your list... -->
+        </input>
+        <input id="addBtn" class="btn" type="button" name="" value="Get to it">
+        <!-- <a href="#" class="btn">Add</a> -->
+        <input type="button" id="clearBtn" class="btn" value="Clear list">
+      </form>
+    </div>
+  </section>
+
+  <!-- footer  -->
+
+  <footer id="main-footer" class="grid">
+    <div>TeamAwesome</div>
+    <div>2018</div>
+  </footer>
+    <input type="button" id="catbutton" value="Kitty">
+
+
+  <!-- JavaScript  -->
+
+  <script src="/Users/Zack/code/To_do_list/todo/script.js" charset="utf-8"></script>
 </body>
 </html>
