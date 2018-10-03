@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/Users/Zack/code/To_do_list/todo/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+    <title>To Do App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="align">
+
+        <!-- App goes here  -->
+<!-- Top greating  -->
+        <div class="app">
+          <div class="greeting">
+            <h1 id="timegreet"></h1>
+            <h3 class="welcome">Here is your to do</h3>
+          </div>
+        </div>
+
+        <!-- List goes here  -->
+        <ul>
+          <li class="listitem">
+            <a href="" class="donebtn" onmousedown="return false">Done</a>
+            <div class="right">
+              <p contenteditable="true">Go to work</p>
+            </div>
+            <a href="" class="deleteBtn" onmousedown="return false">X</a>
+          </li>
+        </ul>
+
+        <!-- Add Bottom -->
+        <div class="bottom">
+          <a href="" class="addBtn" onmousedown="return false">+ Add Item</a>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js" charset="utf-8"></script>
+    <script src="js/querscript.js" charset="utf-8"></script>
+  </body>
+</html>
