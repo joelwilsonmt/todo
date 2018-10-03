@@ -1,10 +1,47 @@
 <html>
 <head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <title>To Do List</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 </head>
 <body>
+  <div id="pen"><img src="http://www.pngmart.com/files/1/Fountain-Pen-PNG-Clipart.png"></div>
+
+  <div id="container">
+    <div id="note-top"></div>
+    <div id="overlay">
+      <h1 class="center">To Do List</h1>
+      <div class="center">
+      <img class="center" width="300"src="http://cimt.edu/wp-content/uploads/2017/09/underline.png">
+    </div>
+    <div id="todo-container">
+      <h1 class="underline">To Do</h1>
+      <ul id="todo">
+      </ul>
+      <div class="right">
+        <button class ="clear" id="clear-all-todo">Clear All ( - )</button>
+      </div>
+      <div id="button-container">
+        <input type="text" id="task" placeholder="To do..." autofocus>
+        <button id="add">Add ( + )</button>
+      </div>
+    </div>
+    <div id="done-container">
+      <h1 class="underline">Done</h1>
+      <ul id="done">
+      </ul>
+      <div class="right">
+        <button class="clear" id="clear-all-done">Clear All ( - )</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="js/script.js"></script>
+
 </body>
 </html>
