@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-// Listen for click on button and adds li to ul
-
       $('.addBtn').on('click', function(e){
         e.preventDefault();
       });
@@ -11,7 +9,7 @@ $(document).ready(function(){
           $(this).blur();
         }
       });
-
+// Listens for button click then adds li to ul
       $('.addBtn').on('click', function(){
         $('ul').append("<li class='listitem'>"+
           '<a href="" class="donebtn" onmousedown="return false">Done</a>'+
@@ -22,9 +20,11 @@ $(document).ready(function(){
         "</li>").find('li:last-child');
 
         $('li:last-child p').text('New Task...');
+
         $('li:last-child p').on('click', function() {
           $(this).empty();
         });
+
         $('li:last-child p').keydown(function(e){
           if (e.which == 13){
             e.preventDefault();
@@ -32,5 +32,7 @@ $(document).ready(function(){
           }
         });
       });
+
+// Listens for click on donebtn and adds class change color and crossout fontawesome
 
 });//End ready function
