@@ -1,8 +1,8 @@
 //Greets user with time appropriate greeting
-function greet(){
-  var greeting;
-  var today = new date();
+
+  var today = new Date();
   var hourNow = today.getHours();
+  var greeting;
 
     if (hourNow > 18){
       greeting = 'Good Evening';
@@ -15,4 +15,3 @@ function greet(){
     }
 
   document.getElementById('timegreet').innerText = greeting;
-};
