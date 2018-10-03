@@ -64,7 +64,9 @@ h1 {
   border: 1px solid #bfc4b7;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
   0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2em;
 }
+
 
 .list-title > li {
   text-decoration: underline;
@@ -75,13 +77,35 @@ h1 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
   0 6px 20px 0 rgba(0, 0, 0, 0.19);
 } */
-li > input {
+li > .checkbox-done {
   /* display: inline-block; */
   float: left;
   margin: auto;
   zoom: 2.5;
 }
-
+/* .checkbox-done input[type="checkbox"]:checked + label :: after{
+  content: "\f00d";
+}*/
+li > .Xbox {
+  float:right;
+  margin: auto;
+  zoom: 2.5;
+}
+span.done {
+    float: left;
+    margin: auto;
+    /* display: block; */
+    /* margin-bottom: 0em; */
+    margin-left: 2em;
+    text-decoration: underline;
+}
+span.clear {
+    float: right;
+    margin: auto;
+    margin-right: 3em;
+    text-align: center;
+    text-decoration: underline;
+}
 
 /* Section b  */
 h3{

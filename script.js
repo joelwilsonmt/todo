@@ -1,26 +1,36 @@
 $(document).ready(function(){
   $('#section-a').hide();
+
   $('#catface').hide();
 // clears text in input box
+
       $('#textin').on('click', function() {
         $(this).val(' ');
         console.log("HEY");
       });
 
+//listens for enter click
 // Adds user input from text box to list
-  $(function(){
+
+  $(function (){
     var textstore;
     $('#addBtn').on('click', function() {
       textstore = $('#textin').val();
         console.log(textstore);
           $('#section-a').show();
             $('#list').append("<li id='listitem'>"+
-            '<input id="checkbox" type="checkbox" name="check" value="">'+textstore+"</li>");
-// Adds Line through on Check box click or list item click depending on how we style.
-        $('li').click(function(){
-          $(this).toggleClass('linethrough');
-      });
-    });
+            '<input class="checkbox-done" type="checkbox" name="check" value="">'+'<input class="Xbox" type="checkbox" value="X">'+textstore+"</li>");
+          });
+        });
+
+// Adds Line through on Check box click or list item click depending on how we style
+
+  $('#list').on('click',".checkbox-done", function(){
+    $(this).parent('li').addClass('linethrough');
+    console.log('Working');
+  });
+  $('#list').on('click', ".Xbox", function(){
+    $(this).parent('li').remove();
   });
 
 // Clear list button
@@ -41,4 +51,4 @@ $(document).ready(function(){
   $('#catbutton').on('click',function() {
     $('#catface').slideToggle('slow');
   });
-});
+});//end doc.ready()
