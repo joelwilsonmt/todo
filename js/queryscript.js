@@ -9,7 +9,7 @@ $(document).ready(function(){
       $('.donebtn').on('click', function(e){
         e.preventDefault();
       });
-      $('p').keydown(function(e){
+      $('#todoitem').keydown(function(e){
         if (e.which == 13){
           e.preventDefault();
           $(this).blur();
