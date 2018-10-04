@@ -10,14 +10,15 @@ $(document).ready(function(){
         }
       });
 // Listens for button click then adds li to ul
+      var li = `<li class="listitem">
+        <a href="" class="donebtn" onmousedown="return false">Done</a>
+        <div class="right">
+          <p contenteditable="true">Go to work</p>
+        </div>
+        <a href="" class="deleteBtn" onmousedown="return false">X</a>
+      </li>`;
       $('.addBtn').on('click', function(){
-        $('ul').append("<li class='listitem'>"+
-          '<a href="" class="donebtn" onmousedown="return false">Done</a>'+
-          '<div class="right">'+
-            '<p contenteditable="true">Go to work</p>'+
-          "</div>"+
-          '<a href="" class="deleteBtn" onmousedown="return false">X</a>'+
-        "</li>").find('li:last-child');
+        $('ul').append(li).find('li:last-child');
 
         $('li:last-child p').text('New Task...');
 

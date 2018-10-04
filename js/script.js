@@ -14,4 +14,4 @@
       greeting = 'Welcome';
     }
 
-  document.getElementById('timegreet').innerText = greeting;
+  $('#timegreet').text(greeting);
