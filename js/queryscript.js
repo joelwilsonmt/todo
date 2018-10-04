@@ -9,10 +9,11 @@ $(document).ready(function(){
       $('.donebtn').on('click', function(e){
         e.preventDefault();
       });
-      $('#todoitem').keydown(function(e){
+      $('ul').keydown('input', function(e){
         if (e.which == 13){
           e.preventDefault();
           $(this).blur();
+          $('.addBtn').focus();
         }
       });
 // Listens for button click then adds li to ul
@@ -24,7 +25,7 @@ $(document).ready(function(){
         <button class="deleteBtn" type="button" name="button">X</button>
       </li>`;
 
-      $('.addBtn').on('click', function(){
+      $('.addBtn').click(function(){
         $('ul').append(li).find('li:last-child');
 
         // $('li:last-child p').text('New Task...');
@@ -41,6 +42,12 @@ $(document).ready(function(){
           $(this).blur();
         }
       });
+// Listens for click and deletes targeted li item
+      $('ul').on('click', 'button.deleteBtn', function(){
+        $(this).parent().remove();
+        console.log('Clicking');
+      });
+
 // Listens for click on donebtn and adds class change color and crossout fontawesome
 
 });//End ready function

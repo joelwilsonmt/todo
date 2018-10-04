@@ -1,3 +1,49 @@
+/*Devtools updates  */
+.wrapper {
+    width: 100%;
+    min-height: 960px;
+}
+
+.align {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.app {
+    width: 375px;
+    min-height: 200px;
+    margin: 0 auto;
+    border-radius: 22px;
+    background: #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    letter-spacing: -1px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.greeting {
+    position: relative;
+    height: 170px;
+    width: auto;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    text-align: center;
+    background-color: white;
+}
+
+h1#timegreet {
+    position: relative;
+    width: 100%;
+    padding: 11px 0 5px 0;
+}
+
+h3.welcome {
+    position: relative;
+    width: 100%;
+    padding: 11px 0 5px 0;
+}
+
 /*  Add Button  */
 .addBtn {
 	-moz-box-shadow:inset 0px 0px 0px 0px #97c4fe;
